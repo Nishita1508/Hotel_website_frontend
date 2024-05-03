@@ -1,0 +1,91 @@
+/* (A) SEAT & "COLOR CODE" */
+.seat {
+    text-align: center;
+    padding: 20px 10px;
+    border-radius: 10px;
+    background: #f1f1f1;
+  }
+  .taken {
+    background: #df0000;
+    color: #fff;
+  }
+  .selected {
+    background: #87ff96;
+  }
+  
+  /* (B) SEATS LAYOUT */
+  #layout {
+    max-width: 400px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  /* (C) LEGEND */
+  #legend {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 50px auto;
+  }
+  #legend .txt {
+    display: flex;
+    align-items: center;
+  }
+  
+  /* (D) SAVE */
+  #save {
+    font-size: 20px;
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: 0;
+    color: #fff;
+    background: #00479f;
+  }
+  
+  /* (X) DOES NOT MATTER */
+  /* PAGE & BODY */
+  * {
+    font-family: arial, sans-serif;
+    box-sizing: border-box;
+  }
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-image: url(https://t3.ftcdn.net/jpg/06/37/16/64/360_F_637166455_RZOHg6K3M6noLPKQmOHH5ZI70zXEyDaq.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  
+  /* WIDGET */
+  .widget-wrap {
+    min-width: 600px;
+    padding: 30px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.8);
+  }
+  
+  /* SVG */
+  #sort {
+    width: 100px;
+    height: 100px;
+    background-image: url('data:image/svg+xml;utf8,<svg viewBox="0 0 512 512" width="100" xmlns="http://www.w3.org/2000/svg"><path d="M349.565 98.783C295.978 98.783 251.721 64 184.348 64c-24.955 0-47.309 4.384-68.045 12.013a55.947 55.947 0 0 0 3.586-23.562C118.117 24.015 94.806 1.206 66.338.048 34.345-1.254 8 24.296 8 56c0 19.026 9.497 35.825 24 45.945V488c0 13.255 10.745 24 24 24h16c13.255 0 24-10.745 24-24v-94.4c28.311-12.064 63.582-22.122 114.435-22.122 53.588 0 97.844 34.783 165.217 34.783 48.169 0 86.667-16.294 122.505-40.858C506.84 359.452 512 349.571 512 339.045v-243.1c0-23.393-24.269-38.87-45.485-29.016-34.338 15.948-76.454 31.854-116.95 31.854z" /></svg>');
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  /* FOOTER */
+  #code-boxx {
+    font-weight: 600;
+    margin-top: 50px;
+  }
+  #code-boxx a {
+    display: inline-block;
+    padding: 5px;
+    text-decoration: none;
+    background: #b90a0a;
+    color: #fff;
+  }
